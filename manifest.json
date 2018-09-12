@@ -1,0 +1,46 @@
+﻿{
+    "manifest_version": 2,
+    "name": "自动登录微信",
+    "short_name": "登录微信",
+    "version": "0.0.0.0001",
+    "description": "登录微信",
+    "author": "gambolday",
+    "permissions": [
+        "tabs",
+        "cookies",
+        "storage",
+        "browsingData",
+        "*://mp.weixin.qq.com/*"
+    ],
+
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+
+    "background": {
+        "persistent": true,
+        "scripts": ["js/jquery.js", "background.js"]
+    },
+
+    "content_scripts": [{
+        "matches": ["*://mp.weixin.qq.com/cgi-bin/*"],
+        "js": ["js/jquery.js", "js/reset.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }, {
+        "matches": ["*://mp.weixin.qq.com/"],
+        "js": ["js/jquery.js", "js/login.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }],
+
+    "web_accessible_resources": [],
+
+    "browser_action": {
+        "default_title": "自动登录微信",
+        "default_icon": "images/icon19.png",
+        "default_popup": "popup.html"
+    }
+}

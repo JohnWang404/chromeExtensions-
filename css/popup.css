@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 350px;
+    height: 500px;
+    background: rgb(245, 245, 245);
+}
+
+#footer {
+    width: 50%;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+}
+
+#signout {
+    width: 50%;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    border-left: 1px solid lightgrey;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+}
+
+#users {
+    width: 100%;
+    margin-bottom: 10vw
+}
+
+#users li {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    line-height: 70px;
+    border-bottom: 1px lightgray solid;
+    padding-left: 10px;
+    cursor: pointer;
+    padding-left: 70px;
+    position: relative;
+    background: white;
+    overflow: hidden;
+}
+
+#users li:hover {
+    background: rgb(245, 245, 245)
+}
+
+#users li .userName {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    color: lightslategray
+}
+
+#users li .displayName {
+    display: block;
+    position: absolute;
+    top: -13px
+}
+
+#users li img {
+    width: 50px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    border-radius: 50%
+}
+
+#nouser {
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    border-bottom: 1px lightgray solid;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    background: white;
+    display: none
+}
+
+#logined {
+    display: none;
+}
+
+#beforlogin {
+    padding-top: 20px;
+    width: 100%;
+}
+
+#beforlogin ul li {
+    margin-top: 20px;
+    margin-left: 15px;
+    list-style: none;
+    height: 40px;
+}
+
+#beforlogin ul li input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    float: left;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.logintitle {
+    display: block;
+    width: 60px;
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+    text-align: right;
+}
+
+#submit {
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    background: rgb(51, 133, 255);
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.margin {
+    margin-top: 40px;
+}

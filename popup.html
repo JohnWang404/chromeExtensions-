@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+
+<head>
+    <title>自动登录微信</title>
+</head>
+<link rel="stylesheet" href="css/popup.css">
+
+<body>
+    <div id="beforlogin">
+        <ul>
+            <li><span class="logintitle">用户名：</span><input id="username" type="text"></li>
+            <li><span class="logintitle">密码：</span><input id="pwd" type="password"></li>
+        </ul>
+        <button id="submit">登录</button>
+    </div>
+    <div id="logined">
+        <div>
+            <ul id="users">
+            </ul>
+            <div id="nouser">没有用户信息</div>
+        </div>
+        <div id="footer">添加帐户</div>
+        <div id="signout"> 退出登录</div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/axios.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="background.js"></script>
+</body>
+
+</html>
